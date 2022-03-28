@@ -1,9 +1,6 @@
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20 px;
-  border: solid;
-  border-color: black;
-  background-color: blue;
 }
