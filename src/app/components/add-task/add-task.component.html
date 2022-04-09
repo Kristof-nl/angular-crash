@@ -1,16 +1,17 @@
-<form class="add-form">
+<form class="add-form" (ngSubmit)="onSubmit()">
     <div class="form-control">
         <label for="text">Task</label>
-        <input type="text" name="text" id="test" placeholder="Add Task">
+        <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="Add Task">
     </div>
     <div class="form-control">
         <label for="text">Day & Time</label>
-        <input type="text" name="day" id="day" placeholder="Add Day & Time">
+        <input type="text" name="day" [(ngModel)]="day" id="day" placeholder="Add Day & Time">
     </div>
       <div class="form-group form-check ml-2">
         <input
           class="mx-4"
           type="checkbox"
+          [(ngModel)]="reminder"
           name="reminder"
           id="reminder"
         />
